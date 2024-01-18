@@ -1,3 +1,15 @@
-.about{
-    height: 100vh;
+.about {
+    color: white;
+    text-align: center;
+}
+
+.aboutt {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.about-content {
+    color: white;
+    font-size: 1.2rem;
+    text-align: justify;
 }
