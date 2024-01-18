@@ -20,14 +20,16 @@ const EachEvent = ({ img, title, date }) => {
 
 const Events = () => {
     return (
-        <div className="events">
-            <h1>Events</h1>
-            <div className="allEvents">
-                {events.map(event => {
-                    return <EachEvent img={event.img} title={event.name} date={event.date} />
-                })}
-            </div>
-        </div >
+        <div id="Events">
+            <div className="events">
+                <h1>Events</h1>
+                <div className="allEvents">
+                    {events.map(event => {
+                        return <EachEvent img={event.img} title={event.name} date={event.date} />
+                    })}
+                </div>
+            </div >
+        </div>
     )
 }
 

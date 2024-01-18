@@ -26,7 +26,12 @@
   align-items: center;
 
   img {
+<<<<<<< HEAD
 width: 30%;
+=======
+    width: 80px;
+    height: 60px;
+>>>>>>> 4296c6e6fbd7599a4501120c2790974985e64d35
 
     @media screen and (min-width: 2000px) {
       width: 200px;
@@ -114,20 +119,20 @@ width: 30%;
     // padding: 1rem;
 
     width: 80%;
-    height: 100vh;
+    height: 100%;
 
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
 
-    background: url('../../assets/bgWhite.png');
-    background-color: var(--white-color);
+    // background: url('../../assets/bgWhite.png');
+    // background-color: var(--white-color);
     background-size: cover;
     background-repeat: repeat;
 
     /* top box shadow */
-    box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+    // box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
 
     ul {
 
