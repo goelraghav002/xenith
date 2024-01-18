@@ -16,11 +16,7 @@ function App() {
   useEffect(() => {
     // Simulate an asynchronous operation (e.g., fetching data) for 3 seconds
     const fetchData = async () => {
-<<<<<<< HEAD
-      await new Promise((resolve) => setTimeout(resolve,5300));
-=======
       await new Promise((resolve) => setTimeout(resolve, 5300));
->>>>>>> parent of 0e895ef (check)
       setLoading(false);
     };
 
