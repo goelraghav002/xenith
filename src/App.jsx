@@ -5,6 +5,7 @@ import Banner from './container/Banner/Banner'
 import About from './container/About/About'
 import Footer from './components/Footer/Footer'
 import Team from './container/Team/Team'
+import Gallery from './container/Gallery/Gallery'
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Banner />
       <About />
       <Team/>
+      <Gallery/>
       <Footer />
     </div>
 
