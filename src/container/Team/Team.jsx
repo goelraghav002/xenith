@@ -4,7 +4,7 @@ import { teamMembers } from "../../constants"
 
 const Canvas = ({ imgSrc, titles, details }) => {
     return (
-        <a href="#" className="canvas">
+        <a className="canvas">
             <div className="canvas_border">
                 <svg>
                     <defs>
