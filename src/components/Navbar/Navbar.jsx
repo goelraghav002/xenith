@@ -12,11 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-<<<<<<< HEAD
-      const shouldBlur = scrollY > 20; 
-=======
       const shouldBlur = scrollY > 30; // Adjust this threshold as needed
->>>>>>> 4296c6e6fbd7599a4501120c2790974985e64d35
 
       setIsScrolled(shouldBlur);
     };
