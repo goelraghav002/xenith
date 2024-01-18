@@ -74,7 +74,10 @@ import aryan from '../../assets/Team Members/Ansh.jpg';
 
 const Gallery = () => {
   return (
-    <div className="slider">
+    <div className="Gallery">
+         <h1 className='Gallery-head' >Gallery</h1>
+<div className="slider">
+   
       <span style={{ '--i': 1 }}><img src={aryan} alt="Aryan Gupta" /></span>
       <span style={{ '--i': 2 }}><img src={aryan} alt="Ansh" /></span>
       <span style={{ '--i': 3 }}><img src={aryan} alt="Aryesh Srivastava" /></span>
@@ -84,6 +87,8 @@ const Gallery = () => {
       <span style={{ '--i': 7 }}><img src={aryan}alt="Ishika" /></span>
       <span style={{ '--i': 8 }}><img src={aryan} alt="Avisha Goyal" /></span>
     </div>
+    </div>
+    
   );
 };
 
