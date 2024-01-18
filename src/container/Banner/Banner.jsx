@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './Banner.css';
 
+
 const Banner = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -24,6 +25,7 @@ const Banner = () => {
         <div className="content">
           <h1>XENITH'24</h1>
           <h5>The Incognito Realm</h5>
+          
         </div>
       </div>
     );
