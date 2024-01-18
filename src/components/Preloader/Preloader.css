@@ -1,28 +1,26 @@
-
-
-
 .preloader {
-  position: fixed;
-
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 900px) {
-  .video {
-    height: 30vh; /* Adjust the height as needed for smaller screens */
-  }
-  .preloader {
     position: fixed;
-    top: 0;
-    left: 0;
+  
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-}
+  
+  @media screen and (max-width: 900px) {
+    .video {
+      height: 30vh; /* Adjust the height as needed for smaller screens */
+    }
+    .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
