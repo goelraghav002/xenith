@@ -3,9 +3,9 @@ import './Gallery.css';
 import aryan from '../../assets/Team Members/Ansh.jpg';
 const Gallery = () => {
   return (
-    <div id="Gallery">
+   
       <div className="Gallery">
-        <div className="Heading">Gallery</div>
+      <h1 className='vim'>Gallery</h1>
         <div className="slider">
 
           <span style={{ '--i': 1 }}><img src={aryan} alt="Aryan Gupta" /></span>
@@ -19,7 +19,7 @@ const Gallery = () => {
 
         </div>
       </div>
-    </div>
+
   );
 };
 

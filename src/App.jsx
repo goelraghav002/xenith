@@ -35,6 +35,7 @@ function App() {
           <Events/>
           <Team />
           <Gallery />
+          <Sponsors/>
           <Footer />
         </>
       )}

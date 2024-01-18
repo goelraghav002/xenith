@@ -1,22 +1,26 @@
 .slider {
    position: relative; 
+   display: flex;
    justify-content: center;
    align-items: center;
-   top: 250px;
+   top: 190px;
    left: 525px;
     width: 200px;
     height: 600px;
     transform-style: preserve-3d;
     animation: rotate 30s linear infinite;
-    z-index: 1; 
+    z-index: 2; 
   }
-  
-  .Heading
-  {
-    height: 10px;
+  .vim {
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    background-color: black; 
   }
  
-  
+
   .slider span {
     position: absolute;
     width: 100%;
