@@ -40,13 +40,15 @@ const Banner = () => {
   };
 
   return (
-    <div className="landing-page">
-      <div className="parallax-background" style={parallaxStyle(0.1, 0.1, 0.0005, 0)}></div>
-      <div className="layer1" style={parallaxStyle(0.0, 0, 0.0003, -0.2)}></div>
-      <div className="layer2" style={parallaxStyle(0.0, 0, 0.0002, 0.3)}></div>
-      <div className="content">
-        <h1>XENITH'24</h1>
-        <h5>The Incognito Realm</h5>
+    <div id="Home">
+      <div className="landing-page">
+        <div className="parallax-background" style={parallaxStyle(0.1, 0.1, 0.0005, 0)}></div>
+        <div className="layer1" style={parallaxStyle(0.0, 0, 0.0003, -0.2)}></div>
+        <div className="layer2" style={parallaxStyle(0.0, 0, 0.0002, 0.3)}></div>
+        <div className="content">
+          <h1>XENITH'24</h1>
+          <h5>The Incognito Realm</h5>
+        </div>
       </div>
     </div>
   );

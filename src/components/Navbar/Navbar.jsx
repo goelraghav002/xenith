@@ -12,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const shouldBlur = scrollY > 20; // Adjust this threshold as needed
+      const shouldBlur = scrollY > 30; // Adjust this threshold as needed
 
       setIsScrolled(shouldBlur);
     };
@@ -27,12 +27,12 @@ const Navbar = () => {
   return (
     <>
 
-      <nav className={`app__navbar ${isScrolled?'blurred':''}`}>
+      <nav className={`app__navbar ${isScrolled ? 'blurred' : ''}`}>
         <div className="app__navbar-logo">
           <img src={image} alt="logo" />
         </div>
         <ul className='app__navbar-links'>
-          {["home", "About", "Events", "TimeLine", "Gallery", "Team", "Sponsors", "Contact"].map((item) => (
+          {["Home", "About", "Events", "TimeLine", "Gallery", "Team", "Partners", "Contact"].map((item) => (
             <li className='app__flex p-text' key={`link-${item}`}>
               <div />
               <a href={`#${item}`}> {item} </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
             >
               <ul>
                 <HiX onClick={() => setToggle(false)} />
-                {["home", "about", "Events", "TimeLine", "Gallery", "Team", "Sponsors", "Contact"].map((item) => (
+                {["Home", "About", "Events", "TimeLine", "Gallery", "Team", "Partners", "Contact"].map((item) => (
                   <li className='p-text' key={`${item}`}>
                     <a href={`#${item}`} onClick={() => setToggle(false)}> {item} </a>
                   </li>
