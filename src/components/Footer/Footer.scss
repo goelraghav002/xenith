@@ -8,7 +8,7 @@
     background-size: 100% 100%;
     display: flex;
     justify-content: space-around;
-    padding: 50px;
+    padding: 50px 0px;
     gap: 20px;
     box-sizing: border-box;
 }
@@ -44,8 +44,14 @@
     .location-content {
         display: flex;
         flex-direction: column;
-        padding-bottom: 15px;
+
+        // padding-bottom: 5px;
         padding-left: 10px;
+
+        p {
+
+            margin: 5px;
+        }
     }
 }
 
@@ -54,15 +60,13 @@
 
     p {
         font-weight: 800;
-        padding-bottom: 15px;
+        padding-bottom: 5px;
         padding-left: 10px;
         font-size: 0.9rem;
     }
 
     div {
         display: flex;
-
-
     }
 }
 
@@ -81,7 +85,9 @@
 
 .find-us {
     text-align: center;
-    margin-top: 20px;
+    // margin-top: 20px;
+    font-size: 1.2rem;
+    margin-right: 2%;
 }
 
 .social-icons {
