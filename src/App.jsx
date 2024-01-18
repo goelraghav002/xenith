@@ -5,6 +5,7 @@ import Banner from './container/Banner/Banner';
 import About from './container/About/About';
 import Footer from './components/Footer/Footer';
 import Team from './container/Team/Team';
+import Events from './container/Events/Events';
 import Gallery from './container/Gallery/Gallery';
 import Sponsors from './container/Sponsors/Sponsors';
 import Preloader from './components/Preloader/Preloader'; // Import the Preloader component
@@ -15,7 +16,7 @@ function App() {
   useEffect(() => {
     // Simulate an asynchronous operation (e.g., fetching data) for 3 seconds
     const fetchData = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 300));
+      await new Promise((resolve) => setTimeout(resolve,5300));
       setLoading(false);
     };
 
@@ -31,6 +32,7 @@ function App() {
           <Navbar />
           <Banner />
           <About />
+<Events/>
           <Team />
           <Gallery />
      
