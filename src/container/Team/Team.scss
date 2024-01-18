@@ -55,8 +55,8 @@
 
         .canvas_border {
             position: absolute;
-            top: 40px;
-            left: -40px;
+            top: 30px;
+            left: -30px;
             height: 100%;
             width: 100%;
             z-index: 0;
@@ -103,6 +103,7 @@
             text-transform: uppercase;
             color: #dac527;
             z-index: 100;
+            padding: 10px;
         }
 
         // .canvas_copy--left {
@@ -211,15 +212,42 @@
         }
 
         @media (max-width:1300px) {
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
 
         @media (max-width:1000px) {
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
 
         @media (max-width:650px) {
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(1, 1fr);
+
+            .canvas_copy_title,
+            .canvas_copy_subtitle,
+            .canvas_copy_details {
+                opacity: 1;
+            }
+
+            .canvas_copy_title {
+                transform: translateX(0);
+            }
+
+            .canvas_copy_details {
+                transform: translateX(0);
+            }
+
+            .canvas_img {
+                opacity: 1;
+            }
+
+            .canvas_copy_title {
+                font-size: 1.5rem;
+            }
+
+            .canvas_copy {
+                backdrop-filter: blur(10px);
+                width: 100%;
+            }
         }
     }
 }
