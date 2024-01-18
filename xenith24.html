@@ -1,14 +1,31 @@
-import React from 'react'
-import './About.css'
-import Counter from '../../components/Counter/Counter.jsx';
-const About = () => {
-  return (
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <div class="bg-group">
+          <div class="bg"></div>
+          <div class="bg">
+            <h1>XENITH'24</h1>
+            <h5>The Incognito Realm</h5>
+          </div>
+          <div class="bg"></div>
 
-    <>
-      <div className='about'>
-        <h2>ABOUT US</h2>
-        <div className='aboutt'>
-          <div className='about-content'>
+          <div class="bg"></div>
+          <div class="bg"></div>
+        </div>
+      </div>
+      <div class="tab tab1">
+        <div class="content">
+          <h5></h5>
+          <h2>ABOUT</h2>
+          <div class="des">
             In the past few years we have grown to realise that technology is
             the fuel that can drive the simplest of ventures to wondrous
             heights. With new things coming up every now and then, we often
@@ -29,14 +46,10 @@ const About = () => {
             the abyss! Tighten your safety jackets, hold your breaths and dive
             in!
           </div>
-          <Counter eventDate={"2024-02-03T23:59:59"} />
         </div>
       </div>
-    </>
+    </div>
 
-
-
-  )
-}
-
-export default About
+    <script src="app.js"></script>
+  </body>
+</html>
