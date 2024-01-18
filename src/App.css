@@ -3,7 +3,7 @@ body{
     background-color: #010302;
     margin :0;
     font-family: 'Josefin Sans', sans-serif;   
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 
