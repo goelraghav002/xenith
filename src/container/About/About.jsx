@@ -1,8 +1,9 @@
 import React from 'react'
 import './About.css'
-
+import Counter from '../../components/Counter/Counter.jsx';
 const About = () => {
   return (
+
     <>
       <div className='about'>
         <h2>ABOUT US</h2>
@@ -28,9 +29,13 @@ const About = () => {
             the abyss! Tighten your safety jackets, hold your breaths and dive
             in!
           </div>
+          <Counter eventDate={"2024-02-03T23:59:59"} />
         </div>
       </div>
     </>
+
+
+
   )
 }
 
