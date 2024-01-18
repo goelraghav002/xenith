@@ -12,7 +12,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const shouldBlur = scrollY > 20; // Adjust this threshold as needed
+      const shouldBlur = scrollY > 20; 
 
       setIsScrolled(shouldBlur);
     };
@@ -29,7 +29,7 @@ const Navbar = () => {
 
       <nav className={`app__navbar ${isScrolled?'blurred':''}`}>
         <div className="app__navbar-logo">
-          <img src={image} alt="logo" />
+          <img src={image} alt="logo" className='lo'/>
         </div>
         <ul className='app__navbar-links'>
           {["home", "About", "Events", "TimeLine", "Gallery", "Team", "Sponsors", "Contact"].map((item) => (

@@ -1,12 +1,6 @@
-/**/
-
-
 import React from 'react';
 import './Gallery.css';
-
 import aryan from '../../assets/Team Members/Ansh.jpg';
-
-
 const Gallery = () => {
   return (
     <div className="Gallery">
