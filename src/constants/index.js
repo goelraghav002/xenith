@@ -89,7 +89,42 @@ const teamMembers = [
     },
 ];
 
+const events = [
+    {
+        name: "Event 1",
+        date: "3rd October 2023",
+        img: Aryan_Gupta,
+    },
+    {
+        name: "Event 2",
+        date: "4th - 7th October 2023",
+        img: Ansh,
+    },
+    {
+        name: "Event 1",
+        date: "10th October 2023",
+        img: Raghav_Goel
+    },
+    {
+        name: "Event 1",
+        date: "12th - 25th October 2023",
+        img: Aryesh_Srivastava
+    },
+    {
+        name: "Event 1",
+        date: "28th October 2023",
+        img: Tanya_Gupta,
+    },
+    {
+        name: "Event 1",
+        date: "28th October 2023",
+        img: Avisha_Goyal,
+    },
+];
+
+
 
 export {
-    teamMembers
+    teamMembers,
+    events,
 }
