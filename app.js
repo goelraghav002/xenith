@@ -15,7 +15,7 @@ window.addEventListener('wheel', function (event) {
     let top = scrollValue;
     listBg.forEach((bg, index) => {
         if (index != 0) {
-            bg.animate({
+            bg.animate({ 
                 transform: `translateY(${(-top * index)}px)`
             }, { duration: 1000, fill: "forwards" });
         }
