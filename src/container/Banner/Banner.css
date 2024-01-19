@@ -6,7 +6,8 @@
 }
 
 .parallax-background {
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)10%),url("../../assets/xenith24.jpg") center/cover no-repeat;
+/*  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)10%),url("../../assets/xenith24.jpg") center/cover no-repeat;*/
+background: url("../../assets/xenith24.jpg") center/cover no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -36,7 +37,7 @@
     background: url("../../assets/bg2.png") center/cover no-repeat;
     z-index: 1;
     background-size: cover;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)10%);
+    /*background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)10%);*/
 }
 
 .layer2 {
@@ -47,7 +48,7 @@
     background: url("../../assets/xenith24.png") center/cover no-repeat;
     z-index: 2;
     background-size: cover;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)20%);
+  /*  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)20%);*/
 }
 
 .content {
