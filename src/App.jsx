@@ -9,6 +9,7 @@ import Events from './container/Events/Events'
 import Gallery from './container/Gallery/Gallery';
 import Sponsors from './container/Sponsors/Sponsors';
 import Preloader from './components/Preloader/Preloader'; // Import the Preloader component
+import Timeline from './container/Timeline/Timeline';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -32,6 +33,7 @@ function App() {
           <Navbar />
           <Banner />
           <About />
+          <Timeline />
           <Events/>
           <Team />
           <Gallery />
