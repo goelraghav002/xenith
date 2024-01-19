@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
-import { useState } from "react";
-import { HiMenuAlt4, HiX } from "react-icons/hi"
-import { motion } from "framer-motion"
-import "./Navbar.scss";
-import image from "../../assets/LOGO.png";
+import React, { useEffect, useState } from 'react';
+import { HiMenuAlt4, HiX } from 'react-icons/hi';
+import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
+import './Navbar.scss';
+import image from '../../assets/LOGO.png';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,9 +24,13 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleLinkClick = () => {
+    // Close the mobile menu if open
+    setToggle(false);
+  };
+
   return (
     <>
-
       <nav className={`app__navbar ${isScrolled ? 'blurred' : ''}`}>
         <div className="app__navbar-logo">
           <img src={image} alt="logo" className='lo'/>
@@ -35,7 +39,16 @@ const Navbar = () => {
           {["Home", "About", "Events", "TimeLine", "Gallery", "Team", "Partners", "Contact"].map((item) => (
             <li className='app__flex p-text' key={`link-${item}`}>
               <div />
-              <a href={`#${item}`}> {item} </a>
+              <Link
+                to={item}
+                spy={true}
+                smooth={true}
+                offset={-130} // Adjust the offset as needed
+                duration={700}
+                onClick={handleLinkClick}
+              >
+                {item}
+              </Link>
             </li>
           ))}
         </ul>
@@ -46,13 +59,21 @@ const Navbar = () => {
             <motion.div
               whileInView={{ x: [200, 0] }}
               transition={{ duration: 0.65, ease: "easeOut" }}
-
             >
               <ul>
                 <HiX onClick={() => setToggle(false)} />
                 {["Home", "About", "Events", "TimeLine", "Gallery", "Team", "Partners", "Contact"].map((item) => (
                   <li className='p-text' key={`${item}`}>
-                    <a href={`#${item}`} onClick={() => setToggle(false)}> {item} </a>
+                    <Link
+                      to={item}
+                      spy={true}
+                      smooth={true}
+                      offset={-130} // Adjust the offset as needed
+                      duration={700}
+                      onClick={handleLinkClick}
+                    >
+                      {item}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -61,8 +82,7 @@ const Navbar = () => {
         </div>
       </nav>
     </>
+  );
+};
 
-  )
-}
-
-export default Navbar
+export default Navbar;
