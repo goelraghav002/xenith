@@ -47,7 +47,7 @@ const Banner = () => {
         <div className="layer2" style={parallaxStyle(0.0, 0, 0.0002, 0.3)}></div>
         <div className="content">
           <h1>XENITH'24</h1>
-          <h5>The Incognito Realm</h5>
+          <h5 >The Incognito Realm</h5>
         </div>
       </div>
     </div>
