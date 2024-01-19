@@ -3,8 +3,13 @@
     text-align: center;
     font-size: 1.4rem;
     margin-top: 5%;
+   
 }
-
+#About{
+    background:linear-gradient(
+        to top, #010302 -2%, transparent 20% , #010302 90%
+   ),url("xenith\'24\(2\).jpg");
+}
 .aboutt {
     margin-left: 4%;
     margin-right: 4%;

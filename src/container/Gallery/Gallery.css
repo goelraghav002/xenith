@@ -43,7 +43,7 @@
        height: 500px;
      }
      .slider span {
-      transform: rotateY(calc(var(--i) * 47deg)) translateZ(122px);
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(130px);
     }
     .slider span img {
 
