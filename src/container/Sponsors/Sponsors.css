@@ -1,4 +1,4 @@
-
+/*
 .vim {
   font-family: 'Salsa';
   font-size: 5vw;
@@ -44,5 +44,32 @@
     align-items: center;
     width: 90%;
   
+  }
+}*/
+.sponsors-carousel {
+  position: relative;
+  left: 2%;
+  width: 94%;
+  padding: 10px; 
+
+}
+
+.XYZ {
+
+  width: 60%;
+}
+
+.XYZ img {
+  max-width: 100%; /* Ensure the image takes the full width of its container */
+  height: auto;
+  padding: 5%;/* Adjust the margin to decrease the gap between images */
+}
+@media screen and (max-width: 768px) {
+  .XYZ img {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+  .sponsors-carousel{
+    width: 87%;
+    left: 3.5%;
   }
 }

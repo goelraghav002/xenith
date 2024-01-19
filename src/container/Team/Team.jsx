@@ -50,7 +50,7 @@ const Team = () => {
     return (
         <div className="team">
             <div className="heading">
-                <h1>Organizing Team</h1>
+                <h1 className="vim">Organizing Team</h1>
             </div>
             <div className="allTeam">
                 {teamMembers.map(member => {

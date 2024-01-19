@@ -5,17 +5,15 @@
     margin-top: 5%;
    
 }
-#About{
-    background:linear-gradient(
-        to top, #010302 -2%, transparent 20% , #010302 90%
-   ),url("xenith\'24\(2\).jpg");
-}
+
 .aboutt {
     margin-left: 4%;
     margin-right: 4%;
 }
 
 .about-content {
+    font-family: 'Poppins';
+font-weight:530;
     color: white;
     font-size: 1.5rem;
     text-align: justify;
@@ -23,3 +21,14 @@
     line-height: 0.8cm;
     padding: 0px 35px;
 }
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        
+font-weight:350;
+        font-size: 1.1rem;
+        line-height: 0.5cm;
+        
+    }
+  
+  }

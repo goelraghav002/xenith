@@ -2,11 +2,11 @@
 
 .slider {
    position: relative; 
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   
    top: 190px;
-   left: 525px;
+   left: auto;
+   right: auto;
+   left: 500px;
     width: 200px;
     height: 600px;
     transform-style: preserve-3d;
@@ -41,17 +41,24 @@
   } 
   @media screen and (max-width: 768px) {
     .slider {
-      left: 80px;
+      left: 73px;
        width: 200px;
        height: 500px;
      }
      .slider span {
-      transform: rotateY(calc(var(--i) * 45deg)) translateZ(130px);
+      width: 70%;
+      height: 70%;
+      transform: rotateY(calc(var(--i) * 48deg)) translateZ(130px);
     }
     .slider span img {
 
       width: 43%; 
      height: 24%;
+  }
+  .vim
+  {
+    font-size: 10vw;
+    text-align:center;
   }
   }
   @keyframes rotate {
@@ -62,3 +69,4 @@
       transform: perspective(1000px) rotateY(360deg);
     }
   }
+
