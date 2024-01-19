@@ -8,6 +8,7 @@ import Team from './container/Team/Team'
 import Events from './container/Events/Events'
 import Gallery from './container/Gallery/Gallery'
 import Sponsors from './container/Sponsors/Sponsors'
+import Timeline from './components/TImeline/Timeline'
 
 
 
@@ -18,10 +19,10 @@ function App() {
       <Navbar />
       <Banner />
       <About />
+      <Timeline />
       <Events />
       <Team />
       <Gallery/>
-    
       <Footer />
       
     </div>
