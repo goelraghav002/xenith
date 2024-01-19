@@ -7,11 +7,13 @@ import { Aryan_Gupta } from '../../assets/Team Members';
 import './Sponsors.css';
 
 const Sponsors = () => {
+  const isSmallScreen = window.innerWidth <= '400px';
   const sliderSettings = {
     infinite: true,
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 1500,
+    slidesToShow: isSmallScreen ? 1 : 3,
     slidesToShow: 3,
     slidesToScroll: 3,
     nextArrow: null, 
