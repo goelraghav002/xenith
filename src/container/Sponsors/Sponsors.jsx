@@ -14,7 +14,7 @@ const Sponsors = () => {
     autoplay: true,
     autoplaySpeed: 1500,
     slidesToShow: isSmallScreen ? 1 : 3,
-    slidesToShow: 3,
+  
     slidesToScroll: 3,
     nextArrow: null, 
   };
