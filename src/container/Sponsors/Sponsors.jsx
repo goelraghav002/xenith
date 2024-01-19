@@ -9,7 +9,7 @@ import './Sponsors.css';
 const Sponsors = () => {
   const isSmallScreen = window.innerWidth <= '400px';
   const sliderSettings = {
-    infinite: true,
+    infinite: false,
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 1500,
@@ -38,8 +38,8 @@ const Sponsors = () => {
     <div className="sponsors-carousel">
       <h1 className='vim'>Sponsors</h1>
       <Slider {...sliderSettings}>
-        {sponsors.map((sponsor) => (
-          <div className='XYZ' key={sponsor.id}>
+        {sponsors.map((sponsor, index) => (
+          <div className='XYZ' key={index}>
             <img src={sponsor.image} alt={sponsor.name} />
           </div>
         ))}
