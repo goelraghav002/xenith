@@ -1,11 +1,23 @@
+
+.vim {
+  font-family: 'Salsa';
+  font-size: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;  
+}
+.Sponsors{
+  padding-left: 10px;
+  padding-right: 10px;
+}
 .partner {
   width: 20%;
-  margin: auto;
+  padding: 10px;
 }
 
 .mySwiper {
   width: 100%;
-  
 }
 
 .swiper-slide img {

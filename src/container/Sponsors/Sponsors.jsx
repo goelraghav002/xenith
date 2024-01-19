@@ -8,7 +8,8 @@ import './Sponsors.css';
 
 export default function Sponsors() {
   return (
-    <>
+    <div className='Sponsors'>
+      <h1 className='vim'>Partners</h1>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -56,6 +57,6 @@ export default function Sponsors() {
           <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Sponsor 9" />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
