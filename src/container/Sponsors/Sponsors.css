@@ -67,11 +67,12 @@
 }
 @media screen and (max-width: 768px) {
   .XYZ img {
-    max-width: 99%;
-    padding: 5px; /* Adjust padding for smaller screens */
+    max-width: 96%;
+    padding: 10px; /* Adjust padding for smaller screens */
   }
   .sponsors-carousel{
     width: 85%;
-    left: 3.3%;
+    left: 4.9%;
+    margin-bottom: 10%;
   }
 }
