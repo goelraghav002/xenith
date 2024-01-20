@@ -9,7 +9,7 @@ const Timeline = () => {
 
 
   return (
-    <div className="timeline-section">
+    <div className="timeline-section" id='TimeLine'>
       <h3 className='text vim'>Timeline</h3>
       <VerticalTimeline lineColor='#3498db'>
 

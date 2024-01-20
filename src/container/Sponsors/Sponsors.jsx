@@ -35,7 +35,7 @@ const Sponsors = () => {
   ];
 
   return (
-    <div className="sponsors-carousel">
+    <div className="sponsors-carousel" id='Partners'>
       <h1 className='vim'>Partners</h1>
       <Slider {...sliderSettings}>
         {sponsors.map((sponsor, index) => (
