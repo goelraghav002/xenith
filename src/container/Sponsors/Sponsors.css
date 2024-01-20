@@ -46,6 +46,12 @@
   
   }
 }*/
+.sponsors-carousel .slick-next {
+  display: none !important;
+}
+.sponsors-carousel .slick-prev {
+  display: none !important;
+}
 .sponsors-carousel {
   position: relative;
   left: 2%;

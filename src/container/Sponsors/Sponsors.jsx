@@ -9,7 +9,7 @@ import './Sponsors.css';
 const Sponsors = () => {
   const isSmallScreen = window.innerWidth <= '400px';
   const sliderSettings = {
-    infinite: false,
+    infinite: true,
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 1500,
