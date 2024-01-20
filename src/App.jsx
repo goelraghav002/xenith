@@ -32,13 +32,14 @@ function App() {
       ) : (
         <>
         
-        <Navbar />
+          <Navbar />
           <Banner />
           <About />
           <Timeline />
+
           <Events/>
           <Team />
-          {/* <Gallery /> */}
+          <Gallery />
           <Sponsors/>
           <Footer /> 
           {/*<EventPage/>*/}
