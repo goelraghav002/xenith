@@ -1,4 +1,4 @@
-import p1 from './../Gallery/DSC_3238.jpg';
+import p1 from '../../assets/Gallery/DSC_3238.JPG';
 import p2 from './../Gallery/DSC_3259.jpg';
 import p3 from './../Gallery/DSC_3396.jpg';
 import p4 from './../Gallery/DSC_3447.jpg';

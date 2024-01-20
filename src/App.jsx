@@ -10,6 +10,7 @@ import Gallery from './container/Gallery/Gallery';
 import Sponsors from './container/Sponsors/Sponsors';
 import Preloader from './components/Preloader/Preloader'; // Import the Preloader component
 import Timeline from './container/Timeline/Timeline';
+import EventPage from './pages/EventPage';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -17,7 +18,7 @@ function App() {
   useEffect(() => {
     // Simulate an asynchronous operation (e.g., fetching data) for 3 seconds
     const fetchData = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 5300));
+      await new Promise((resolve) => setTimeout(resolve, 5));
       setLoading(false);
     };
 
@@ -30,7 +31,8 @@ function App() {
         <Preloader />
       ) : (
         <>
-          <Navbar />
+        
+        <Navbar />
           <Banner />
           <About />
           <Timeline />
@@ -38,7 +40,8 @@ function App() {
           <Team />
           {/* <Gallery /> */}
           <Sponsors/>
-          <Footer />
+          <Footer /> 
+          {/*<EventPage/>*/}
         </>
       )}
     </div>
