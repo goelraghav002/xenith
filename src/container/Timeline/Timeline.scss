@@ -1,0 +1,43 @@
+.timeline-section {
+    @apply m-5 mx-auto w-60 bg-gray-900 text-white; /* Tailwind CSS classes for margin, width, background color, and text color */
+    
+    @screen sm {
+        width: 80%; /* Adjust width for small screens */
+    }
+
+    @screen md {
+        width: 100%; /* Adjust width for medium screens */
+        margin: 3rem 0;
+    }
+
+    h2 {
+        @apply text-lg mb-4; /* Tailwind CSS classes for font-size and margin-bottom */
+    }
+
+   
+
+    .para {
+        @apply text-lg;
+
+        @screen sm {
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        }
+    }
+
+    .vertical-timeline-element--work {
+        @apply bg-gray-800 text-white; /* Tailwind CSS classes for timeline item background color and text color */
+
+        .vertical-timeline-element-title {
+            @apply text-white; /* Tailwind CSS class for title text color */
+        }
+
+        .para {
+            @apply text-gray-500; /* Tailwind CSS class for para text color */
+        }
+    }
+
+    .vertical-timeline-element::before {
+        @apply bg-gray-700; /* Tailwind CSS class for timeline line color */
+    }
+}

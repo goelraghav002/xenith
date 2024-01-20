@@ -36,7 +36,7 @@ const Navbar = () => {
           <img src={image} alt="logo" className='lo'/>
         </div>
         <ul className='app__navbar-links'>
-          {["Home", "About", "Events", "TimeLine", "Gallery", "Team", "Partners", "Contact"].map((item) => (
+          {["Home", "About", "TimeLine", "Events", "Team","Gallery","Partners", "Contact"].map((item) => (
             <li className='app__flex p-text' key={`link-${item}`}>
               <div />
               <Link
