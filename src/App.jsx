@@ -31,10 +31,10 @@ function App() {
         <>
           <Navbar />
           <Banner />
-           <About /> 
+          <About /> 
           <Events/>
           <Team />
-          {/* <Gallery /> */}
+          <Gallery />
           <Sponsors/>
           <Footer />
         </>
