@@ -36,7 +36,7 @@ function App() {
           <Timeline />
           <Events/>
           <Team />
-          <Gallery />
+          {/* <Gallery /> */}
           <Sponsors/>
           <Footer />
         </>

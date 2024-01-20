@@ -1,13 +1,15 @@
 .preloader {
-    position: fixed;
-  
-    width: 100vw;
-    height: 100vh;
+  position: fixed;
+  }
+  .preloader video{
+    position: relative;
+    top: -100px;
+    width: 220vh;
+height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
   @media screen and (max-width: 900px) {
     .video {
       height: 30vh; /* Adjust the height as needed for smaller screens */
@@ -21,5 +23,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    .preloader video{
+      top: 60px;
     }
   }

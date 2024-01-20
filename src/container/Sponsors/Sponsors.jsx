@@ -1,62 +1,51 @@
+// Sponsors.js
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { Aryan_Gupta } from '../../assets/Team Members';
 import './Sponsors.css';
 
-export default function Sponsors() {
+const Sponsors = () => {
+  const isSmallScreen = window.innerWidth <= '400px';
+  const sliderSettings = {
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    slidesToShow: isSmallScreen ? 1 : 3,
+  
+    slidesToScroll: 3,
+    nextArrow: null, 
+  };
+
+  const sponsors = [
+    { id: 1, name: 'Sponsor 1', image: Aryan_Gupta },
+    { id: 2, name: 'Sponsor 2', image: Aryan_Gupta },
+    { id: 3, name: 'Sponsor 3', image: Aryan_Gupta },
+    { id: 1, name: 'Sponsor 1', image: Aryan_Gupta },
+    { id: 2, name: 'Sponsor 2', image: Aryan_Gupta },
+    { id: 3, name: 'Sponsor 3', image: Aryan_Gupta },
+    { id: 1, name: 'Sponsor 1', image: Aryan_Gupta },
+    { id: 2, name: 'Sponsor 2', image: Aryan_Gupta },
+    { id: 3, name: 'Sponsor 3', image: Aryan_Gupta },
+    { id: 1, name: 'Sponsor 1', image: Aryan_Gupta },
+    { id: 2, name: 'Sponsor 2', image: Aryan_Gupta },
+    { id: 3, name: 'Sponsor 3', image: Aryan_Gupta },
+  ];
+
   return (
-    <div className='Sponsors'>
+    <div className="sponsors-carousel">
       <h1 className='vim'>Partners</h1>
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'1'}
-        spaceBetween={'-70%'}
-        coverflowEffect={{
-          rotate: 40,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-        allowSlideNext={true}
-        allowSlidePrev={true}
-      >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="Sponsor 1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="Sponsor 2" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="Sponsor 3" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="Sponsor 4" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="Sponsor 5" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-6.jpg" alt="Sponsor 6" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-7.jpg" alt="Sponsor 7" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-8.jpg" alt="Sponsor 8" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-9.jpg" alt="Sponsor 9" />
-        </SwiperSlide>
-      </Swiper>
+      <Slider {...sliderSettings}>
+        {sponsors.map((sponsor, index) => (
+          <div className='XYZ' key={index}>
+            <img src={sponsor.image} alt={sponsor.name} />
+          </div>
+        ))}
+      </Slider>
     </div>
   );
-}
+};
+
+export default Sponsors;

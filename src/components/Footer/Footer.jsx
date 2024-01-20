@@ -1,7 +1,7 @@
 import React from 'react';
 import background from '../../assets/back.jpg';
 import './Footer.scss';
-import logo from '../../assets/ieee-1.svg';
+import logo from '../../assets/ieee-logo.png';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
@@ -19,7 +19,7 @@ export default function Footer() {
                     {/* <img className="bg-img" src={background} alt="" /> */}
                     <div className="symbol">
                         <img className="logo" src={logo} alt="IEEE Logo" />
-                        <p>STUDENT BRANCH JIIT</p>
+                       
                     </div>
                     <div className="Location">
                         <div>
@@ -43,7 +43,7 @@ export default function Footer() {
                         </div>
                         <div>
                             <MdEmail />
-                            <p>Email - ieeesbjiitweb@gmail.com</p>
+                            <p>Email - ieeesbjiitdb@gmail.com</p>
                         </div>
                     </div>
                     <div className="find-us">

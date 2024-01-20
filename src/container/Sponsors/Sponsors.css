@@ -1,4 +1,4 @@
-
+/*
 .vim {
   font-family: 'Salsa';
   font-size: 5vw;
@@ -44,5 +44,41 @@
     align-items: center;
     width: 90%;
   
+  }
+}*/
+.sponsors-carousel .slick-next {
+  display: none !important;
+}
+.sponsors-carousel .slick-prev {
+  display: none !important;
+}
+.sponsors-carousel {
+  position: relative;
+  left: 2%;
+  width: 94%;
+  padding: 8px; 
+
+}
+
+.XYZ {
+
+  width: 60%;
+}
+
+.XYZ img {
+  border-radius: 13%;
+  max-width: 80%; /* Ensure the image takes the full width of its container */
+  height: auto;
+  padding: 5%;/* Adjust the margin to decrease the gap between images */
+}
+@media screen and (max-width: 768px) {
+  .XYZ img {
+    max-width: 96%;
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  .sponsors-carousel{
+    width: 85%;
+    left: 4.9%;
+    margin-bottom: 10%;
   }
 }
