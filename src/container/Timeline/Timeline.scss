@@ -14,14 +14,7 @@
         @apply text-lg mb-4; /* Tailwind CSS classes for font-size and margin-bottom */
     }
 
-    .text{
-        color: white;
-        display: flex;
-        justify-content: center;
-        font: bold;
-        font-size: xx-large;
-        margin-top: 6%;
-    }
+   
 
     .para {
         @apply text-lg;

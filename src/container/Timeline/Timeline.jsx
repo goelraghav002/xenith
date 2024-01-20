@@ -10,7 +10,7 @@ const Timeline = () => {
 
   return (
     <div className="timeline-section">
-      <h3 className='text'>Timeline</h3>
+      <h3 className='text vim'>Timeline</h3>
       <VerticalTimeline lineColor='#3498db'>
 
         {timeline.map((item, index) => {
