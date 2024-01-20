@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     // Simulate an asynchronous operation (e.g., fetching data) for 3 seconds
     const fetchData = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 5));
+      await new Promise((resolve) => setTimeout(resolve, 5300));
       setLoading(false);
     };
 
