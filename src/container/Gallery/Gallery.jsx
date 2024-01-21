@@ -19,7 +19,7 @@ const Gallery = ({ images, interval = 3000 }) => {
   };
 
   return (
-    <div className="Gallery">
+    <div className="Gallery_b">
       <div className="gallery-container">
       <h1 className='vim'>Gallery</h1>
       <div className="container_images">

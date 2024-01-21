@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Salsa&display=swap');
-
+.Gallery_b
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .gallery-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 210vh;
+  width: 110vh;
 }
 
 .container_images {
   display: flex;
+  
   justify-content: space-between; /* Distribute space between containers */
   max-width: 1000px; /* Adjust the maximum width as needed */
 }
@@ -17,6 +23,7 @@
 .container_image,
 .container_image1,
 .container_image2 {
+  
   width: 580px; /* Adjust the width of the container as needed */
   height: 300px; /* Adjust the height of the container as needed */
   margin: 10px; /* Add margin between containers */
@@ -26,12 +33,14 @@
 }
 
 .gallery-image {
+  
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .vim {
+  
   font-family: 'Salsa', sans-serif;
   font-size: 9vh;
   text-align: center; /* Center-align the text */
@@ -49,25 +58,25 @@
   .container_images {
     flex-direction: column;
     align-items: center;
-    max-width: 80vw; 
+  
   }
-
+.gallery-container{
+  max-width: 20vw;
+}
   .container_image{
     width: 80vw;
   }
   .container_image1,
   .container_image2 {
-    width: 80vw; 
+   
     display: none;
   }
-.Gallery
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-  .gallery-container {
-    width: 80vw; 
-   
+  .Gallery_b
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+ 
+  
 }
