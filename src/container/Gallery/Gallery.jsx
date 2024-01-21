@@ -26,3 +26,5 @@ const Gallery = ({ images, interval = 3000 }) => {
 };
 
 export default Gallery;
+
+

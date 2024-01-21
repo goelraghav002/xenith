@@ -38,10 +38,11 @@ function App() {
       ) : (
         <>
         
-        <Navbar />
+          <Navbar />
           <Banner />
           <About />
           <Timeline />
+
           <Events/>
           <Team />
           <Gallery images={imageUrls} interval={3000} />

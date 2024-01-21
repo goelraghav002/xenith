@@ -23,7 +23,7 @@
     border-radius: 50%;
     border: 3px solid white;
     background: rgba(212, 211, 211, 0.082);
-    animation: rotate 6s linear infinite;
+    /* animation: rotate 6s linear infinite; */
   }
   
   .ring-inner {
@@ -40,14 +40,14 @@
     bottom: 30%;
   }
   
-  @keyframes rotate {
+  /* @keyframes rotate {
     0% {
       transform: rotate(0deg);
     }
     100% {
       transform: rotate(360deg);
     }
-  }
+  } */
   
   .unit-label {
     margin-top: 0.5em;
