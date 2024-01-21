@@ -2,27 +2,72 @@
 
 .gallery-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: auto;
-  max-width: 80px; /* Set the maximum width of the container */
+  flex-direction: column;
+  width: 210vh;
+}
+
+.container_images {
+  display: flex;
+  justify-content: space-between; /* Distribute space between containers */
+  max-width: 1000px; /* Adjust the maximum width as needed */
+}
+
+.container_image,
+.container_image1,
+.container_image2 {
+  width: 580px; /* Adjust the width of the container as needed */
+  height: 300px; /* Adjust the height of the container as needed */
+  margin: 10px; /* Add margin between containers */
+  overflow: hidden;
+  border: 2px solid #333;
+  border-radius: 10px;
 }
 
 .gallery-image {
   width: 100%;
-  
-  object-fit: cover; /* Maintain aspect ratio */
+  height: 100%;
+  object-fit: cover;
 }
 
-/* Add any additional styling as needed */
+.vim {
+  font-family: 'Salsa', sans-serif;
+  font-size: 9vh;
+  text-align: center; /* Center-align the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
 
-  .vim {
-    font-family: 'Salsa';
-    font-size: 4vw;
-    display: flex;
-    justify-content: center;
+@media (max-width: 600px) {
+  .container_images {
+    flex-direction: column;
     align-items: center;
-    color: white; 
-    background-color: black; 
+    max-width: 80vw; 
   }
- 
+
+  .container_image{
+    width: 80vw;
+  }
+  .container_image1,
+  .container_image2 {
+    width: 80vw; 
+    display: none;
+  }
+.Gallery
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  .gallery-container {
+    width: 80vw; 
+   
+  }
+}

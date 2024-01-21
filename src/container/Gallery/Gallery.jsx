@@ -14,17 +14,29 @@ const Gallery = ({ images, interval = 3000 }) => {
     };
   }, [currentIndex, images.length, interval]);
 
- 
+  const getImageAtIndex = (index) => {
+    return images[index % images.length];
+  };
 
   return (
-    <div className="gallery-container">
-     <h1 className='vim'>Gallery</h1>
-      <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} className="gallery-image" />
-     
+    <div className="Gallery">
+      <div className="gallery-container">
+      <h1 className='vim'>Gallery</h1>
+      <div className="container_images">
+        <div className="container_image">
+          <img src={getImageAtIndex(currentIndex)} alt={`Image 1`} className="gallery-image" />
+        </div>
+        <div className="container_image1">
+          <img src={getImageAtIndex(currentIndex + 1)} alt={`Image 2`} className="gallery-image" />
+        </div>
+        <div className="container_image2">
+          <img src={getImageAtIndex(currentIndex + 2)} alt={`Image 3`} className="gallery-image" />
+        </div>
+      </div>
     </div>
+    </div>
+    
   );
 };
 
 export default Gallery;
-
-
