@@ -17,6 +17,9 @@
   color: white;
 }
 
+button{
+  top: 45% !important;
+}
 @media screen and (max-width: 426px) {
   .container {
     width: 65%;
