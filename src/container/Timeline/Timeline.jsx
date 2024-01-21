@@ -10,8 +10,8 @@ const Timeline = () => {
 
   return (
     <div className="timeline-section" id='TimeLine'>
-      <h3 className='text vim'>Timeline</h3>
-      <VerticalTimeline lineColor='#3498db'>
+      <h3 className='text vim' style={{color:"white",display:"flex",justifyContent:"center",fontSize:"2.5rem"}}>Timeline</h3>
+      <VerticalTimeline lineColor='white'>
 
         {timeline.map((item, index) => {
           return (
@@ -20,13 +20,13 @@ const Timeline = () => {
               className="vertical-timeline-element--work"
               contentStyle={{ background: '#f5f5f5', color: '#333333' }}
               contentArrowStyle={{ borderRight: '7px solid  #f5f5f5 ' }}
-              iconStyle={{ background: '#3498db', color: '#fff' }}        
+              iconStyle={{ background: 'DarkSlateGrey', color: '#fff' }}        
               icon={<AiFillCalendar />}
               // style={{width:"auto", maxwidth:"100%"}}
             >
-              <h2 className="vertical-timeline-element-title"><b>DATE:</b> {item.date}</h2>              
+              <h2 className="vertical-timeline-element-title"><b>Event:</b> {item.event}</h2>              
               <p style={{color:" #777777"}} className='para'>
-                {item.event}
+               <b>Date:</b> {item.date}, <b>Time:</b> {item.time}
               </p>
             </VerticalTimelineElement>
           )
