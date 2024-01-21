@@ -1,25 +1,27 @@
-import React from 'react';
-import './Gallery.css';
-import aryan from '../../assets/Team Members/Ansh.jpg';
-const Gallery = () => {
+import React, { useState, useEffect } from 'react';
+import './Gallery.css'; // Import the CSS file for styling
+
+const Gallery = ({ images, interval = 3000 }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, interval);
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [currentIndex, images.length, interval]);
+
+ 
+
   return (
-   
-      <div className="Gallery">
-      <h1 className='vim'>Gallery</h1>
-        <div className="slider">
-
-          <span style={{ '--i': 1 }}><img src={aryan} alt="Aryan Gupta" /></span>
-          <span style={{ '--i': 2 }}><img src={aryan} alt="Ansh" /></span>
-          <span style={{ '--i': 3 }}><img src={aryan} alt="Aryesh Srivastava" /></span>
-          <span style={{ '--i': 4 }}><img src={aryan} alt="Tanya Gupta" /></span>
-          <span style={{ '--i': 5 }}><img src={aryan} alt="Abiha Naqvi" /></span>
-          <span style={{ '--i': 6 }}><img src={aryan} alt="Nikita Bansal" /></span>
-          <span style={{ '--i': 7 }}><img src={aryan} alt="Ishika" /></span>
-          <span style={{ '--i': 8 }}><img src={aryan} alt="Avisha Goyal" /></span>
-
-        </div>
-      </div>
-
+    <div className="gallery-container">
+     <h1 className='vim'>Gallery</h1>
+      <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} className="gallery-image" />
+     
+    </div>
   );
 };
 

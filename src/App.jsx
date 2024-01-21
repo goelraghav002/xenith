@@ -11,8 +11,14 @@ import Sponsors from './container/Sponsors/Sponsors';
 import Preloader from './components/Preloader/Preloader'; // Import the Preloader component
 import Timeline from './container/Timeline/Timeline';
 import EventPage from './pages/EventPage';
+import Carousel from './container/Gallery/Gallery';
+import { Ansh, Aryan_Gupta, Tanish_Goyal, Tanya_Gupta } from './assets/Team Members';
 
 function App() {
+  const imageUrls = [
+    Ansh, Aryan_Gupta,Tanish_Goyal,Tanya_Gupta
+    // Add more image URLs as needed
+  ];
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -38,7 +44,7 @@ function App() {
           <Timeline />
           <Events/>
           <Team />
-          {/* <Gallery /> */}
+          <Gallery images={imageUrls} interval={3000} />
           <Sponsors/>
           <Footer /> 
           {/*<EventPage/>*/}
