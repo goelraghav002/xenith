@@ -2,7 +2,7 @@
     color: black;
     text-decoration: none;
 position: relative;
-top: 5px;
+top: 10px;
 left: 8px;
 }
 .Border {
@@ -112,7 +112,10 @@ left: 8px;
         flex-direction: column;
         padding-left: 10%;
     }
-
+.phone{
+    position: relative;
+  top: 5px;
+}
     .symbol {
         align-items: flex-start;
     }

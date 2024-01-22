@@ -44,7 +44,9 @@ export default function Footer() {
                         </div>
                         <div>
                             <MdEmail />
-                            <p>Email - ieeesbjiitdb@gmail.com</p>
+                        
+                            <a href="mailto:ieeesbjiitdb@gmail.com" className='phone' >Email - ieeesbjiitdb@gmail.com</a>
+                            
                         </div>
                     </div>
                     <div className="find-us">
