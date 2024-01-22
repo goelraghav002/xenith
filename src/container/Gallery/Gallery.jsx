@@ -21,7 +21,7 @@ const Gallery = ({ images, interval = 3000 }) => {
   return (
     <div className="Gallery_b">
       <div className="gallery-container">
-      <h1 className='vim'>Gallery</h1>
+      <h1 className='vim'>Partners</h1>
       <div className="container_images">
         <div className="container_image">
           <img src={getImageAtIndex(currentIndex)} alt={`Image 1`} className="gallery-image" />
