@@ -5,33 +5,32 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Aryan_Gupta } from '../../assets/Team Members';
 import './Sponsors.css';
+import { p1, p2, p3, p4, p5, p6, p7, p8, p9} from '../../assets/Gallery';
 
 const Sponsors = () => {
-  const isSmallScreen = window.innerWidth <= '400px';
+  const isSmallScreen = window.innerWidth <= 768;
+  
   const sliderSettings = {
     infinite: true,
     speed: 1000,
     autoplay: true,
     autoplaySpeed: 1500,
     slidesToShow: isSmallScreen ? 1 : 3,
-  
-    slidesToScroll: 3,
+    slidesToScroll: isSmallScreen ? 1 : 3,
     nextArrow: null, 
   };
 
   const sponsors = [
-    { id: 1, name: 'Sponsor 1', image: Aryan_Gupta },
-    { id: 2, name: 'Sponsor 2', image: Aryan_Gupta },
-    { id: 3, name: 'Sponsor 3', image: Aryan_Gupta },
-    { id: 1, name: 'Sponsor 1', image: Aryan_Gupta },
-    { id: 2, name: 'Sponsor 2', image: Aryan_Gupta },
-    { id: 3, name: 'Sponsor 3', image: Aryan_Gupta },
-    { id: 1, name: 'Sponsor 1', image: Aryan_Gupta },
-    { id: 2, name: 'Sponsor 2', image: Aryan_Gupta },
-    { id: 3, name: 'Sponsor 3', image: Aryan_Gupta },
-    { id: 1, name: 'Sponsor 1', image: Aryan_Gupta },
-    { id: 2, name: 'Sponsor 2', image: Aryan_Gupta },
-    { id: 3, name: 'Sponsor 3', image: Aryan_Gupta },
+  
+    {  image: p1 },
+    {  image: p2 },
+       {  image: p3 }, 
+         {  image: p4 },
+            {  image: p5 }, 
+              {  image: p6 },
+                 {  image: p7 },  
+                  {  image: p8 },
+                  {  image: p9 }
   ];
 
   return (
