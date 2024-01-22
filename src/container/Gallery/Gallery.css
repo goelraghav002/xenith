@@ -1,34 +1,82 @@
-.container{
-  width: 50%;
-  height: auto;
-  margin: 10em auto;
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Salsa&display=swap');
+.Gallery_b
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 110vh;
 }
 
-.w-100{
-  margin: 5%;
+.container_images {
+  display: flex;
+  
+  justify-content: space-between; /* Distribute space between containers */
+  max-width: 1000px; /* Adjust the maximum width as needed */
 }
 
-.vim{
-  font-family: 'Salsa';
-  font-size: 5vw;
+.container_image,
+.container_image1,
+.container_image2 {
+  
+  width: 580px; /* Adjust the width of the container as needed */
+  height: 300px; /* Adjust the height of the container as needed */
+  margin: 10px; /* Add margin between containers */
+  overflow: hidden;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.gallery-image {
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vim {
+  
+  font-family: 'Salsa', sans-serif;
+  font-size: 9vh;
+  text-align: center; /* Center-align the text */
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
+  background-color: black;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-button{
-  top: 45% !important;
-}
-@media screen and (max-width: 426px) {
-  .container {
-    width: 65%;
-    margin: 4em auto;
+@media (max-width: 600px) {
+  .container_images {
+    flex-direction: column;
+    align-items: center;
+  
   }
-  .w-100{
-    height: 80%;
-  }
+.gallery-container{
+  max-width: 20vw;
 }
-
-
-
+  .container_image{
+    width: 80vw;
+  }
+  .container_image1,
+  .container_image2 {
+   
+    display: none;
+  }
+  .Gallery_b
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  
+}
