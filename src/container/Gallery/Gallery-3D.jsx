@@ -2,14 +2,10 @@ import React, { useState } from "react";
 import Carousel from "react-spring-3d-carousel";
 // import uuidv4 from "uuid";
 import { config } from "react-spring";
-import p1 from '../../assets/Gallery/DSC_3238.jpg';
-import p2 from '../../assets/Gallery/DSC_3259.jpg';
-import p3 from '../../assets/Gallery/DSC_3396.jpg';
-import p4 from '../../assets/Gallery/DSC_3447.jpg';
+
+
 import p5 from '../../assets/Gallery/DSCN_20230204_134210_LMC.R12.jpg';
-import p6 from '../../assets/Gallery/DSCN_20230204_134910_LMC.R12.jpg';
-import p7 from '../../assets/Gallery/SB8_0446.jpg';
-import p8 from '../../assets/Gallery/SB8_0450.jpg';
+
 import './Gallery-3D.css'
 
 export const Gallery = () => {
@@ -22,28 +18,28 @@ export const Gallery = () => {
 
   let slides = [
     {
-      content: <img src={p1} alt="1" />
+      content: <img src={p5} alt="1" />
     },
     {
-      content: <img src={p2} alt="2" />
+      content: <img src={p5} alt="2" />
     },
     {
-      content: <img src={p3} alt="3" />
+      content: <img src={p5} alt="3" />
     },
     {
-      content: <img src={p4} alt="4" />
+      content: <img src={p5} alt="4" />
     },
     {
       content: <img src={p5} alt="5" />
     },
     {
-      content: <img src={p6} alt="6" />
+      content: <img src={p5} alt="6" />
     },
     {
-      content: <img src={p7} alt="7" />
+      content: <img src={p5} alt="7" />
     },
     {
-      content: <img src={p8} alt="8" />
+      content: <img src={p5} alt="8" />
     }
   ].map((slide, index) => {
     return { ...slide, onClick: () => setState({ goToSlide: index }) };
