@@ -35,11 +35,12 @@ export default function Footer() {
                     <div className="contact">
                         <div>
                             <FaPhoneAlt />
-                            <p>Aryan Gupta:- +91 9116457772</p>
+                            <a href="tel:+919116457772">Aryan Gupta:- +91 9116457772</a>
+                           
                         </div>
                         <div>
                             <FaPhoneAlt />
-                            <p>Ansh Mishra:- +91 9506424755</p>
+                            <a href="tel:+919506424755">Ansh Mishra:- +91 9506424755</a>
                         </div>
                         <div>
                             <MdEmail />
