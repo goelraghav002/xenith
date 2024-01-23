@@ -8,7 +8,7 @@ import p5 from '../../assets/Gallery/DSCN_20230204_134210_LMC.R12.jpg';
 
 import './Gallery-3D.css'
 
-export const Gallery = () => {
+export const Gallery1 = () => {
   const [state, setState] = useState({
     goToSlide: 0,
     offsetRadius: 2,

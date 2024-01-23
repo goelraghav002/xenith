@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer';
 import Team from './container/Team/Team';
 import Events from './container/Events/Events'
  import Gallery from './container/Gallery/Gallery';
-//import {Gallery} from './container/Gallery/Gallery-3D';
+//zimport Gallery-3D from './container/Gallery/Gallery-3D';
 import Sponsors from './container/Sponsors/Sponsors';
 import Preloader from './components/Preloader/Preloader'; // Import the Preloader component
 import Timeline from './container/Timeline/Timeline';
@@ -43,7 +43,6 @@ function App() {
           <Banner />
           <About />
           <Timeline />
-
           <Events/>
           <Team />
           <Sponsors/>
