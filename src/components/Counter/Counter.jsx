@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Counter.css';
+import './Counter.css'
 
 const Counter = ({ eventDate }) => {
   const calculateTimeLeft = () => {
@@ -33,26 +33,37 @@ const Counter = ({ eventDate }) => {
   };
 
   return (
-    <div className="counter">
-      {Object.keys(timeLeft).map((unit, index) => (
-        <div key={index} className="counter-item">
-          <div className={`ring ring-${unit}`}>
-            <div className="ring-inner">
-              {addLeadingZero(timeLeft[unit])}
-            </div>
-          </div>
-          <div className="unit-label">{unit.toUpperCase()}</div>
-        </div>
-      ))}
+    <div className="counter" style={{ color: "white" }}>
+      <div className="counter-item">
+        <div className="label">Days</div>
+        <div className="value">{addLeadingZero(timeLeft.days)}&emsp;:&nbsp;</div>
+      </div>
+
+      <div className="counter-item">
+        <div className="label">Hours</div>
+        <div className="value">{addLeadingZero(timeLeft.hours)}&emsp;:&nbsp;</div>
+      </div>
+
+      <div className="counter-item">
+        <div className="label">&nbsp;Minutes</div>
+        <div className="value">{addLeadingZero(timeLeft.minutes)}&emsp;:</div>
+      </div>
+
+      <div className="counter-item">
+        <div className="label">&emsp;Seconds</div>
+        <div className="value">{addLeadingZero(timeLeft.seconds)}</div>
+      </div>
     </div>
   );
+  
 };
 
 export default Counter;
 
 
+
 // import React, { useState, useEffect } from 'react';
-// import './Counter.css'
+// import './Counter.css';
 
 // const Counter = ({ eventDate }) => {
 //   const calculateTimeLeft = () => {
@@ -85,33 +96,20 @@ export default Counter;
 //     return value < 10 ? `0${value}` : value;
 //   };
 
-//   // return (
-//   //   <div className="counter" style={{color:"white"}}>
-//   //     {timeLeft.days > 0 && <div className="counter-item">{addLeadingZero(timeLeft.days)} days</div>}
-      
-//   //     <div className="counter-item">{addLeadingZero(timeLeft.hours)}:{addLeadingZero(timeLeft.minutes)}:{addLeadingZero(timeLeft.seconds)}</div>
-//   //   </div>
-//   // );
-
-
 //   return (
-//     <div className="counter" style={{ color: "white" }}>
-//       {timeLeft.days > 0 && 
-      
-//       <div className="counter-item days">{timeLeft.days} days</div>}
-
-//       <div className="counter-item hours">
-//         {timeLeft.hours} hours</div>
-
-//       <div className="counter-item min"> 
-//          {timeLeft.minutes} minutes</div>
-        
-//       <div className="counter-item sec">
-//          {timeLeft.seconds} seconds
-//       </div>
+//     <div className="counter">
+//       {Object.keys(timeLeft).map((unit, index) => (
+//         <div key={index} className="counter-item">
+//           <div className={`ring ring-${unit}`}>
+//             <div className="ring-inner">
+//               {addLeadingZero(timeLeft[unit])}
+//             </div>
+//           </div>
+//           <div className="unit-label">{unit.toUpperCase()}</div>
+//         </div>
+//       ))}
 //     </div>
 //   );
-  
 // };
 
 // export default Counter;

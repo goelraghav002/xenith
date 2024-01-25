@@ -46,7 +46,7 @@ function App() {
           <Events/>
           <Team />
           <Sponsors/>
-          <Gallery images={imageUrls} interval={3000} />
+          {/* <Gallery images={imageUrls} interval={3000} /> */}
           
           <Footer /> 
           {/*<EventPage/>*/}

@@ -1,4 +1,50 @@
-  .counter {
+.counter {
+  display: flex;
+  justify-content: center;
+  margin: 5em;
+  margin-left: 27%;
+  background-color: rgba(203, 214, 226, 0.11);
+  padding: 5%;
+  width: 37vw;
+  box-shadow: 1px 1px 2px rgba(206, 215, 218, 0.231);
+  /* box-shadow: 2px 2px 2px white; */
+}
+
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: Georgia, serif;
+
+}
+
+.label {
+  font-size: 0.7em;
+  margin-bottom: 1em;
+  margin-left: -50%;
+  font-weight: 500;
+
+}
+
+.value {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+@media screen and (max-width: 426px) { 
+  .counter-item{
+    font-size: 0.7em;
+    margin-top: -30%;
+  }
+}
+
+
+  /* .counter {
     display: flex;
     justify-content: center;
     margin: 5em;
@@ -8,11 +54,12 @@
     position: relative;
     width: 8em;
     height: 8em;
-    margin: 2em;
     text-align: center;
     color: #fff;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgb(128, 128, 128);
+    text-shadow: 1px 1.5px 2px rgb(128, 128, 128);
+    display: flex;
+    justify-content: space-around;
 
   }
   
@@ -20,10 +67,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    border: 3px solid white;
-    background: rgba(212, 211, 211, 0.082);
-    /* animation: rotate 6s linear infinite; */
   }
   
   .ring-inner {
@@ -31,65 +74,77 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    font-size: 1.5em;
+    font-size: 3em;
   }
 
   .unit-label{
     font-size: 1em;
     position: relative;
     bottom: 30%;
+    margin-top: 2em;
   }
   
-  /* @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
+  @media screen and (max-width: 1025px) { 
+    .counter-item{
+      width: 5em;
+      height: 5em;
+      
     }
-    100% {
-      transform: rotate(360deg);
-    }
-  } */
-  
-  .unit-label {
-    margin-top: 0.5em;
+    .ring{
+      margin-top: 2em;
+      width: 6em;
+      height: 6em;
+    } 
   }
-  
 
-  /*.counter {
-  display: flex;
-  justify-content: center;
-  margin: 5em;
+@media screen and (max-width: 770px) { 
+  .counter-item{
+    width: 4em;
+    height: 4em;
+  }
+  .ring{
+    margin-top: 2em;
+    width: 5em;
+    height: 5em;
+  } 
 }
 
-.counter-item {
-  width: 5em;
-  height: 6em;
-  background: rgba(226, 223, 223, 0.525);
-  border-radius: 8%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 1.5em;
-  padding: 1%;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 2px 2px 2px white;
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/12399/free-pumpkin-wallpaper-25771-26455-hd-wallpapers.jpg');
-  background-size: cover;
+@media screen and (max-width: 430px) { 
+  .counter-item{
+    width: 1em;
+    height: 1em;
+    margin: 1.7em;
+  }
+  .ring{
+    margin-top: 2em;
+    width: 3em;
+    height: 3em;
+  } 
+  .unit-label{
+    font-size: 0.7em;
+  }
+  .ring-inner{
+    font-size: 1em;
+  }
 }
-
- .days {
-  background-position: 15% 90%;
-}
-
-.hours {
-  background-position: 25% 90%;}
-
-.min {
-  background-position: 35% 90%;}
-
-.sec {
-  background-position: 45% 90%;}  */
-  
+@media screen and (max-width: 330px) { 
+  .counter-item{
+    width: 1em;
+    height: 1em;
+    margin: 1.2em;
+  }
+  .ring{
+    margin-top: 1.2em;
+    width: 2em;
+    height: 2em;
+  } 
+  .unit-label{
+    font-size: 0.5em;
+  }
+  .ring-inner{
+    font-size: 0.7em;
+  }
+  .counter{
+    margin: 3em;
+  }
+} */

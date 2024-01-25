@@ -106,7 +106,7 @@
     top: 0;
     bottom: 0;
     right: 0;
- 
+ //transform:translateX(10px);
     width: 80%;
     height: 100vh;
 
@@ -135,8 +135,9 @@
         margin: 0.5rem 1rem;
       }
 
-      // position: relative;
+       position: relative;
       list-style: none;
+      transform:none;
       margin: 0;
       padding: 0;
       height: 100%;
