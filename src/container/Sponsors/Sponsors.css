@@ -67,7 +67,7 @@ height:20%;
 }
 
 .XYZ img {
-  border-radius: 13%;
+  border-radius: 35px;
   max-width: 80%; /* Ensure the image takes the full width of its container */
   height: auto;
   padding: 5%;/* Adjust the margin to decrease the gap between images */
