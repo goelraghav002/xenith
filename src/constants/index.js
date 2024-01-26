@@ -1,5 +1,5 @@
 import { Abiha_Naqvi, Ansh, Aryan_Gupta, Aryesh_Srivastava, Avisha_Goyal, Devang, Ishika, Komal_Paliwal, Manan, Megha, Nikita_Bansal, Nitya_Kapur, Raghav_Goel, Saara_Tyagi, Shaheera_Fatima, Tanish_Goyal, Tanya_Gupta } from "../assets/Team Members";
-
+import { cluedo_quest, codebreak, e_ureka, hackstreet_2, sandbox, tech_talk_1, tech_talk_2 } from "../pages/index";
 
 const teamMembers = [
     {
@@ -91,34 +91,67 @@ const teamMembers = [
 
 const events = [
     {
-        name: "Event 1",
+        name: "Cluedo Quest",
         date: "3rd October 2023",
-        img: Aryan_Gupta,
+        poster: Aryan_Gupta,
+        url: 'https://bit.ly/48GnMIn?r=qr',
+        rules: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        qr: cluedo_quest,
     },
     {
-        name: "Event 2",
+        name: "Codebreak",
         date: "4th - 7th October 2023",
-        img: Ansh,
+        poster: Aryan_Gupta,
+        url: 'https://bit.ly/48GnMIn?r=qr',
+        rules: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        qr: codebreak,
     },
     {
-        name: "Event 1",
+        name: "E Ureka",
         date: "10th October 2023",
-        img: Raghav_Goel
+        poster: Aryan_Gupta,
+        url: 'https://bit.ly/48GnMIn?r=qr',
+        rules: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        qr: e_ureka,
     },
     {
-        name: "Event 1",
+        name: "Hackstreet 2.0",
         date: "12th - 25th October 2023",
-        img: Aryesh_Srivastava
+        poster: Aryan_Gupta,
+        url: 'https://bit.ly/48GnMIn?r=qr',
+        rules: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        qr: hackstreet_2,
     },
     {
-        name: "Event 1",
+        name: "Sandbox",
         date: "28th October 2023",
-        img: Tanya_Gupta,
+        poster: Aryan_Gupta,
+        url: 'https://bit.ly/48GnMIn?r=qr',
+        rules: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        qr: sandbox,
     },
     {
-        name: "Event 1",
+        name: "Tech Talk 1",
         date: "28th October 2023",
-        img: Avisha_Goyal,
+        poster: Aryan_Gupta,
+        url: 'https://bit.ly/48GnMIn?r=qr',
+        rules: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        qr: tech_talk_1,
+    },
+    {
+        name: "Tech Talk 2",
+        date: "28th October 2023",
+        poster: Aryan_Gupta,
+        url: 'https://bit.ly/48GnMIn?r=qr',
+        rules: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        about: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, perferendis ipsum. Voluptatibus praesentium eligendi error rerum, voluptatum libero tempore unde dolorem fugiat aut numquam, ullam ipsum modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam minima, delectus at eveniet itaque nemo ipsum harum modi culpa doloremque corrupti asperiores natus esse reiciendis fuga impedit. Maxime dolorum ut fuga pariatur, in ullam officia qui! Quo voluptatibus aliquam quae aperiam iusto, ad inventore doloribus earum est modi qui dolorem officia sint suscipit repellat vel optio laborum, tempora facere a debitis tempore deleniti id? Eligendi voluptates a magnam error iste rem eos hic facere corporis pariatur alias, quae sapiente aspernatur veritatis impedit explicabo eaque porro, reprehenderit cumque unde et dolorem dolor fugiat vel. Porro architecto ducimus at amet in.',
+        qr: tech_talk_2,
     },
 ];
 
