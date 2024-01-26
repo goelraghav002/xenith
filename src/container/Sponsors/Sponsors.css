@@ -54,20 +54,20 @@
 }
 .sponsors-carousel {
   position: relative;
-  left: 2%;
-  width: 94%;
-  padding: 8px; 
+  width: 100%;
+  margin: auto;
  
 height:20%;
 }
 
 .XYZ {
-
+  display: flex !important;
+  justify-content: center;
   width: 60%;
 }
 
 .XYZ img {
-  border-radius: 13%;
+  border-radius: 35px;
   max-width: 80%; /* Ensure the image takes the full width of its container */
   height: auto;
   padding: 5%;/* Adjust the margin to decrease the gap between images */
@@ -79,7 +79,6 @@ height:20%;
   }
   .sponsors-carousel{
     width: 85%;
-    left: 4.9%;
     margin-bottom: 10%;
    
   }

@@ -10,8 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@coreui/coreui": "^4.3.2",
-    "@coreui/react": "^4.11.1",
     "framer": "^2.4.1",
     "framer-motion": "^10.18.0",
     "jquery": "^3.7.1",

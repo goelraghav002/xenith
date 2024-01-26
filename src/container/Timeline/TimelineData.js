@@ -7,12 +7,12 @@ export const timeline = [
     {
       date: "3rd Febrauary 2024",
       time:"16:30",
-      event: "CodBreak",
+      event: "Code Break",
     },
     {
       date: "4th Febrauary 2024",
       time:"10:00",
-      event: "Cludedo Quest",
+      event: "Cluedo Quest",
     },
     {
       date: "4th Febrauary 2024",
