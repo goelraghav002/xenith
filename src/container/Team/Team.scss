@@ -51,6 +51,10 @@
             // padding: 20px;
             color: inherit;
             text-decoration: none;
+
+            &:hover .canvas_copy{
+                background-image: linear-gradient(360deg,rgba(0,0,0,1),transparent);
+            }
         }
 
         .canvas_border {
@@ -104,6 +108,7 @@
             color: #dac527;
             z-index: 100;
             padding: 10px;
+            transition: all 0.5s ease-in-out;
         }
 
         // .canvas_copy--left {
@@ -170,10 +175,6 @@
             .canvas_copy_title,
             .canvas_copy_details {
                 transform: translateX(0);
-            }
-
-            .canvas_copy_subtitle {
-                transform: rotate(270deg) translateY(-100%) translateX(-100%);
             }
 
             .rect-gradient {
@@ -245,8 +246,9 @@
             }
 
             .canvas_copy {
-                backdrop-filter: blur(10px);
+                // backdrop-filter: blur(10px);
                 width: 100%;
+                background-image: linear-gradient(360deg,rgba(0,0,0,1),transparent);
             }
         }
     }
