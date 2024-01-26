@@ -5,7 +5,7 @@ import { events } from "../../constants";
 import { codebreak } from '../../pages/index';
 import { color } from "framer-motion";
 
-const EachEvent = ({ img, title, date, about, rules, qr }) => {
+const EachEvent = ({ img, title, date, about, rules, qr, url }) => {
     const dialogRef = useRef();
     return (
         <div class="container">
@@ -17,6 +17,7 @@ const EachEvent = ({ img, title, date, about, rules, qr }) => {
                     <h3>{title}</h3>
                     <h4>{date}</h4>
                     <button onClick={() => dialogRef.current.showModal()}>Details...</button>
+                    <a href={url}><button>Register Now</button></a>
                 </div>
 
                 <dialog ref={dialogRef} className="dialogContent">
@@ -53,7 +54,7 @@ const Events = () => {
                 <h1 className="vim">Events</h1>
                 <div className="allEvents">
                     {events.map(event => {
-                        return <EachEvent img={event.poster} title={event.name} date={event.date} about={event.about} rules={event.rules} qr={event.qr} />
+                        return <EachEvent img={event.poster} title={event.name} date={event.date} about={event.about} rules={event.rules} qr={event.qr} url={event.url} />
                     })}
                 </div>
             </div >
