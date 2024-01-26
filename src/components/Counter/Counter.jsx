@@ -33,26 +33,30 @@ const Counter = ({ eventDate }) => {
   };
 
   return (
-    <div className="counter" style={{ color: "white" }}>
-      <div className="counter-item">
-        <div className="label">Days</div>
-        <div className="value">{addLeadingZero(timeLeft.days)}&emsp;:&nbsp;</div>
-      </div>
+    <div className="countdown" style={{ color: "white" }}>
+      <h1 class="text">Your wait ends in...</h1>
+      <div className="counter" style={{ color: "white" }}>
+        <div className="counter-item">
+          <div className="label">Days</div>
+          <div className="value">{addLeadingZero(timeLeft.days)}&emsp;: &nbsp;</div>
+        </div>
 
-      <div className="counter-item">
-        <div className="label">Hours</div>
-        <div className="value">{addLeadingZero(timeLeft.hours)}&emsp;:&nbsp;</div>
-      </div>
+        <div className="counter-item">
+          <div className="label">Hours</div>
+          <div className="value">{addLeadingZero(timeLeft.hours)}&emsp;: &nbsp;</div>
+        </div>
 
-      <div className="counter-item">
-        <div className="label">&nbsp;Minutes</div>
-        <div className="value">{addLeadingZero(timeLeft.minutes)}&emsp;:</div>
-      </div>
+        <div className="counter-item">
+          <div className="label">&nbsp;Minutes</div>
+          <div className="value">{addLeadingZero(timeLeft.minutes)}&emsp;:</div>
+        </div>
 
-      <div className="counter-item">
-        <div className="label">&emsp;Seconds</div>
-        <div className="value">{addLeadingZero(timeLeft.seconds)}</div>
+        <div className="counter-item">
+          <div className="label">&emsp; Seconds</div>
+          <div className="value">{addLeadingZero(timeLeft.seconds)}</div>
+        </div>
       </div>
+      <h2 class="text">Stay tuned !</h2>
     </div>
   );
   
