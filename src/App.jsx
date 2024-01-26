@@ -44,8 +44,8 @@ function App() {
           <About />
           <Timeline />
           <Events/>
-          <Team />
           <Sponsors/>
+          <Team />
           {/* <Gallery images={imageUrls} interval={3000} /> */}
           
           <Footer /> 

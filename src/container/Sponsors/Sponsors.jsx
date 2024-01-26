@@ -12,11 +12,11 @@ const Sponsors = () => {
   
   const sliderSettings = {
     infinite: true,
-    speed: 1000,
+    speed: 1500,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
     slidesToShow: isSmallScreen ? 1 : 3,
-    slidesToScroll: isSmallScreen ? 1 : 3,
+    slidesToScroll: 1,
     nextArrow: null, 
   };
 

@@ -54,15 +54,15 @@
 }
 .sponsors-carousel {
   position: relative;
-  left: 2%;
-  width: 94%;
-  padding: 8px; 
+  width: 100%;
+  margin: auto;
  
 height:20%;
 }
 
 .XYZ {
-
+  display: flex !important;
+  justify-content: center;
   width: 60%;
 }
 
@@ -79,7 +79,6 @@ height:20%;
   }
   .sponsors-carousel{
     width: 85%;
-    left: 4.9%;
     margin-bottom: 10%;
    
   }
