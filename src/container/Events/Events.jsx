@@ -10,9 +10,9 @@ const EachEvent = ({ img, title, date, about, rules, qr }) => {
     return (
         <div class="container">
             <div class="card">
-                <div class="image">
+                {/* <div class="image">
                     <img href="" src={img} />
-                </div>
+                </div> */}
                 <div class="content">
                     <h3>{title}</h3>
                     <h4>{date}</h4>
