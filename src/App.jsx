@@ -11,7 +11,7 @@ import Events from './container/Events/Events'
 import Sponsors from './container/Sponsors/Sponsors';
 import Preloader from './components/Preloader/Preloader'; // Import the Preloader component
 import Timeline from './container/Timeline/Timeline';
-import EventPage from './pages/EventPage';
+// import EventPage from './pages/EventPage';
 import Carousel from './container/Gallery/Gallery';
 import { Ansh, Aryan_Gupta, Tanish_Goyal, Tanya_Gupta } from './assets/Team Members';
 import ScrollDown from './container/Banner/ScrollDown';
