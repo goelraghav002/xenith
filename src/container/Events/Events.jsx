@@ -9,14 +9,14 @@ const EachEvent = ({ img, title, date, about, rules, qr, url }) => {
     return (
         <div class="container">
             <div class="card">
-                {/* <div class="image">
+                <div class="image">
                     <img href="" src={img} />
-                </div> */}
+                </div>
                 <div class="content">
                     <h3>{title}</h3>
                     <h4>{date}</h4>
                     <button onClick={() => dialogRef.current.showModal()}>Details...</button>
-                    <a href={url}><button>Register Now</button></a>
+                    <a href={url}><button>Register</button></a>
                 </div>
 
                 <dialog ref={dialogRef} className="dialogContent">
@@ -35,10 +35,10 @@ const EachEvent = ({ img, title, date, about, rules, qr, url }) => {
                                     <img src={qr} alt="QR Code" />
                                 </div>
                                 <div className='about_rules'>
-                                    <h3>About</h3>
+                                    {/* <h3>About</h3>
                                     <p>{about}</p>
                                     <h3>Rules</h3>
-                                    <p>{rules}</p>
+                                    <p>{rules}</p> */}
                                 </div>
                             </div>
                         </div>
