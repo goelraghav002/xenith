@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+.scroll{
+  font-family:Sacramento;
+  color: #ffffff;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 200%;
+  font-weight: lighter;
+}
+.scroll-down-container {
+  position: fixed;
+  z-index: 180;
+  bottom: 20px;
+  left: 45%;
+  transform: translateX(-50%);
+  opacity: 1;
+  transition: opacity 0.1s ease-in-out;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+.box {
+  width: 20px;
+  height: 35px;
+  background: transparent;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  width: 10.5px;
+  height: 10.5px;
+  border-radius: 50%;
+  background: #ffffff; 
+  inset: 0;
+  margin: auto;
+  animation: circle 1.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes circle {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+.landing-page:not(:hover) .scroll-down-container {
+  opacity: 0;
+}
+@media screen  and (max-width:768px){
+    .scroll-down-container{
+        left: 37%;
+    }
+}

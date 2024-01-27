@@ -14,6 +14,7 @@ import Timeline from './container/Timeline/Timeline';
 import EventPage from './pages/EventPage';
 import Carousel from './container/Gallery/Gallery';
 import { Ansh, Aryan_Gupta, Tanish_Goyal, Tanya_Gupta } from './assets/Team Members';
+import ScrollDown from './container/Banner/ScrollDown';
 
 function App() {
   const imageUrls = [
@@ -41,11 +42,13 @@ function App() {
         
           <Navbar />
           <Banner />
+          <ScrollDown/>
           <About />
           <Timeline />
           <Events/>
           <Sponsors/>
           <Team />
+        
           {/* <Gallery images={imageUrls} interval={3000} /> */}
           
           <Footer /> 
