@@ -29,7 +29,7 @@ export default function Footer() {
                                
                                 <p>XENITH 2024</p>
                                 <p>Jaypee Institute Of Information Technology</p>
-                                <p> Sector-62, Noida </p>
+                                <p> Sector-62 , Noida </p>
                                 <p>India</p>
                             </div>
                         </div>
