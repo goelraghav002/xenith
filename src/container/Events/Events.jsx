@@ -1,23 +1,22 @@
 import React, { useRef } from "react";
 import "./Events.scss";
 import { events } from "../../constants";
-// import poster from '../../assets/coupon-fr.png'
-import { codebreak } from '../../pages/index';
 import { color } from "framer-motion";
+import { IoMdClose } from "react-icons/io";
 
 const EachEvent = ({ img, title, date, about, rules, qr, url }) => {
     const dialogRef = useRef();
     return (
         <div class="container">
             <div class="card">
-                {/* <div class="image">
+                <div class="image">
                     <img href="" src={img} />
-                </div> */}
+                </div>
                 <div class="content">
                     <h3>{title}</h3>
                     <h4>{date}</h4>
                     <button onClick={() => dialogRef.current.showModal()}>Details...</button>
-                    <a href={url}><button>Register Now</button></a>
+                    <a href={url}><button>Register</button></a>
                 </div>
 
                 <dialog ref={dialogRef} className="dialogContent">
@@ -25,20 +24,26 @@ const EachEvent = ({ img, title, date, about, rules, qr, url }) => {
                     {date}
                     <span onClick={()=>dialogRef.current.close()}>close</span> */}
                     <div className='EventPage'>
-                        <h1 className='vim'>{title}</h1>
-                        <span onClick={() => dialogRef.current.close()} style={{ color: 'black' }}>close</span>
-                        <div className="cluedo_quest">
-                            <img className='poster' src={img} alt="Event Banner" />
-                            <div className="main_content">
-                                <div className='mycontent'>
-                                    <p>{about}</p>
-                                    <p>{rules}</p>
+                        <span className="close_btn" onClick={() => dialogRef.current.close()}><IoMdClose /></span>
+                        <div className="event_heading">
+                            <h1 className='vim'>{title}</h1>
+                        </div>
+                        <div className="event_container">
+                            <img className="event_poster" src={img} alt="Event Banner" />
+                            <div className="event_content">
+                                <div className="event_qr">
+                                    <img src={qr} alt="QR Code" />
                                 </div>
-                                <div className='Event_img'>
-                                    <img className='qr' src={qr} alt="QR Code" />
+                                <div className='about_rules'>
+                                    {/* <h3>About</h3>
+                                    <p>{about}</p>
+                                    <h3>Rules</h3>
+                                    <p>{rules}</p> */}
                                 </div>
                             </div>
-                            <a src="" target='_blank'><button className='glow-on-hover'>Register</button></a>
+                        </div>
+                        <div className="event_register_btn">
+                            <a href={url} target='_blank'><button>REGISTER</button></a>
                         </div>
                     </div>
                 </dialog>
