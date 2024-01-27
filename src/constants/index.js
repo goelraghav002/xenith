@@ -1,5 +1,5 @@
 import { Abiha_Naqvi, Ansh, Aryan_Gupta, Aryesh_Srivastava, Avisha_Goyal, Devang, Ishika, Komal_Paliwal, Manan, Megha, Nikita_Bansal, Nitya_Kapur, Raghav_Goel, Saara_Tyagi, Shaheera_Fatima, Tanish_Goyal, Tanya_Gupta } from "../assets/Team Members";
-import { cluedo_quest, codebreak, e_ureka, hackstreet_2, sandbox, tech_talk_1, tech_talk_2 } from "../pages/index";
+import { cluedo_quest, codebreak, e_ureka, hackstreet_2, sandbox, tech_talk_1, tech_talk_2 } from "../assets/xenith_qr/index";
 
 const teamMembers = [
     {
