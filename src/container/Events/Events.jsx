@@ -7,12 +7,12 @@ import { IoMdClose } from "react-icons/io";
 const EachEvent = ({ img, title, date, about, rules, qr, url }) => {
     const dialogRef = useRef();
     return (
-        <div class="container">
-            <div class="card">
-                <div class="image">
+        <div className="container">
+            <div className="card">
+                <div className="image">
                     <img href="" src={img} />
                 </div>
-                <div class="content">
+                <div className="content">
                     <h3>{title}</h3>
                     <h4>{date}</h4>
                     <button onClick={() => dialogRef.current.showModal()}>Details...</button>
@@ -43,7 +43,7 @@ const EachEvent = ({ img, title, date, about, rules, qr, url }) => {
                             </div>
                         </div>
                         <div className="event_register_btn">
-                            <a href={url} target='_blank'><button>REGISTER</button></a>
+                            <a href={url} target='_blank' rel="noreferrer"><button>REGISTER</button></a>
                         </div>
                     </div>
                 </dialog>
