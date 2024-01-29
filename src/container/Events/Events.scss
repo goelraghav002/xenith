@@ -34,8 +34,15 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
 
+        &>div:nth-child(7) {
+            grid-column: 2/3;
+        }
+
         @media (max-width:1150px) {
             grid-template-columns: repeat(2, 1fr);
+            &>div:nth-child(7) {
+                grid-column:auto;
+            }
         }
 
         @media (max-width:750px) {

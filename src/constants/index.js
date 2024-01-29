@@ -23,9 +23,9 @@ const teamMembers = [
         img: Tanya_Gupta,
     },
     {
-        name: "Avisha Goyal",
-        designation: "Tech Head CSE",
-        img: Avisha_Goyal,
+        name: "Abiha Naqvi",
+        designation: "WIE HEAD",
+        img: Abiha_Naqvi,
     },
     {
         name: "Nikita Bansal",
@@ -33,14 +33,39 @@ const teamMembers = [
         img: Nikita_Bansal,
     },
     {
+        name: "Ishika Shukla",
+        designation: "Head Of Operations",
+        img: Ishika,
+    },
+    {
+        name: "Avisha Goyal",
+        designation: "Tech Head CSE",
+        img: Avisha_Goyal,
+    },
+    {
+        name: "Devang Sharma",
+        designation: "Tech Head ECE",
+        img: Devang,
+    },
+    {
         name: "Manan Jain",
         designation: "Digital Head",
         img: Manan,
     },
     {
+        name: "Megha Chauhan",
+        designation: "Cinematography Head",
+        img: Megha,
+    },
+    {
         name: "Nitya Kapur",
         designation: "Marketing Head",
         img: Nitya_Kapur,
+    },
+    {
+        name: "Komal Paliwal",
+        designation: "PR HEAD",
+        img: Komal_Paliwal,
     },
     {
         name: "Tanish Goyal",
@@ -53,34 +78,9 @@ const teamMembers = [
         img: Saara_Tyagi,
     },
     {
-        name: "Abiha Naqvi",
-        designation: "WIE HEAD",
-        img: Abiha_Naqvi,
-    },
-    {
-        name: "Komal Paliwal",
-        designation: "PR HEAD",
-        img: Komal_Paliwal,
-    },
-    {
         name: "Raghav Goel",
         designation: "Webmaster",
         img: Raghav_Goel,
-    },
-    {
-        name: "Ishika Shukla",
-        designation: "Head Of Operations",
-        img: Ishika,
-    },
-    {
-        name: "Devang Sharma",
-        designation: "Tech Head ECE",
-        img: Devang,
-    },
-    {
-        name: "Megha Chauhan",
-        designation: "Cinematography Head",
-        img: Megha,
     },
     {
         name: "Shaheera Fatima",

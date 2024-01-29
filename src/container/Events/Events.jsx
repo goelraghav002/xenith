@@ -34,12 +34,12 @@ const EachEvent = ({ img, title, date, about, rules, qr, url }) => {
                                 <div className="event_qr">
                                     <img src={qr} alt="QR Code" />
                                 </div>
-                                <div className='about_rules'>
-                                    {/* <h3>About</h3>
+                                {/* <div className='about_rules'>
+                                    <h3>About</h3>
                                     <p>{about}</p>
                                     <h3>Rules</h3>
-                                    <p>{rules}</p> */}
-                                </div>
+                                    <p>{rules}</p>
+                                </div> */}
                             </div>
                         </div>
                         <div className="event_register_btn">
