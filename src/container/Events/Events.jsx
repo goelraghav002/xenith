@@ -36,7 +36,7 @@ const EachEvent = ({ img, title, date, about, rules, qr, url }) => {
                                 </div>
                                 <div className='about_rules'>
                                     <h3>About</h3>
-                                    <p>{title == 'Sandbox'
+                                    <div>{title == 'Sandbox'
                                         ? <><p>IEEE Student Branch JIIT presents the most anticipated startup pitch
                                             competition, Sandbox, organized under the umbrella of JIIT's Annual
                                             Techno-Cultural Event - XENITH'24. You have the chance to give your
@@ -53,7 +53,7 @@ const EachEvent = ({ img, title, date, about, rules, qr, url }) => {
                                                 competition! Whether you are a seasoned entrepreneur or a budding
                                                 visionary, Sandbox welcomes you all to be a part of the revolution and
                                                 delve into the world of startups.</p></>
-                                        : about}</p>
+                                        : about}</div>
                                     {/* <h3>Rules</h3>
                                     <p>{rules}</p> */}
                                 </div>
