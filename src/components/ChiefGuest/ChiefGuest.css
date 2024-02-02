@@ -1,0 +1,27 @@
+.ChiefGuest {
+    margin: 100px;
+}
+
+.ChiefGuestContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ChiefGuestPhoto img {
+    width: 300px;
+}
+
+.ChiefGuestContent p {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    text-align: justify;
+}
+
+@media (max-width:1000px) {
+    .ChiefGuestContent {
+        flex-direction: column;
+    }
+}
