@@ -18,10 +18,25 @@
     font-size: 1.2rem;
     font-family: 'Poppins';
     text-align: justify;
+    margin: 0;
+    padding: 0;
 }
 
 @media (max-width:1000px) {
     .ChiefGuestContent {
         flex-direction: column;
+    }
+}
+
+@media (max-width:1000px) {
+    .ChiefGuestContent p {
+        width: 300px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+    }
+
+    .ChiefGuestContent p ul {
+        padding: 4px;
+        margin: 2px;
     }
 }
