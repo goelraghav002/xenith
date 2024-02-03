@@ -15,7 +15,7 @@ const EachEvent = ({ img, title, date, about, rules, qr, url }) => {
                 <div className="content">
                     <h3>{title}</h3>
                     <h4>{date}</h4>
-                    <button onClick={() => dialogRef.current.showModal()}>Details...</button>
+                    {/* <button onClick={() => dialogRef.current.showModal()}>Details...</button> */}
                     <a href={url}><button>Register</button></a>
                 </div>
 
